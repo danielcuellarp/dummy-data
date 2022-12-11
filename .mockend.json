@@ -25,6 +25,57 @@
   "Isolation": {
     "title": {
       "string": {}
+    },
+    "from": {
+      "string": {}
+    },
+    "to": {
+      "string": {}
+    },
+    "isDefeated": {
+      "boolean": {}
+    },
+    "status": {
+      "string": ["blue", "purple", "red"]
+    },
+    "statusCode": { "int": { "min": 1, "max": 3 } }
+  },
+  "Permit": {
+    "number": {
+      "string": {}
+    },
+    "title": {
+      "string": {}
+    },
+    "hardware": {
+      "string": {}
+    },
+    "area": {
+      "string": {}
+    },
+    "date": {
+      "string": ["test.pdf"]
+    },
+    "status": {
+      "belongsTo": "Status"
+    },
+    "isolationPlan": {
+      "boolean": {}
+    },
+    "gasTest": {
+      "boolean": {}
+    },
+    "learnedLessons": {
+      "boolean": {}
+    },
+    "plot": {
+      "string": ["test.pdf"]
+    },
+    "isolationPlanData": {
+      "string": ["isolationPlanData"]
+    },
+    "learnedLessonsData": {
+      "string": ["learnedLessonsData"]
     }
   }
 }
