@@ -25,19 +25,6 @@
   "IsolationPlan": {
     "title": {
       "string": {}
-    },
-    "from": {
-      "string": {}
-    },
-    "to": {
-      "string": {}
-    },
-    "isDefeated": {
-      "boolean": {}
-    },
-    "status": {
-      "string": ["blue", "purple", "red"]
-    },
-    "statusCode": { "int": { "min": 1, "max": 3 } }
+    }
   }
 }
