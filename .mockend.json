@@ -1,43 +1,10 @@
 {
-  "PermitWork": {
-    "number": {
-      "string": {}
-    },
+  "Activity": {
     "title": {
       "string": {}
     },
-    "hardware": {
-      "string": {}
-    },
-    "area": {
-      "string": {}
-    },
-    "date": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
-      }
-    },
-    "status": {
-      "belongsTo": "Status"
-    },
-    "isolationPlan": {
+    "done": {
       "boolean": {}
-    },
-    "gasTest": {
-      "boolean": {}
-    },
-    "learnedLessons": {
-      "boolean": {}
-    },
-    "plot": {
-      "string": ["test.pdf"]
-    },
-    "isolationPlanData": {
-      "belongsTo": "IsolationPlanData"
-    },
-    "learnedLessonsData": {
-      "string": ["learnedLessonsData"]
     }
   },
   "Status": {
@@ -79,12 +46,45 @@
       "hasMany": "Activity"
     }
   },
-  "Activity": {
+  "PermitWork": {
+    "number": {
+      "string": {}
+    },
     "title": {
       "string": {}
     },
-    "done": {
+    "hardware": {
+      "string": {}
+    },
+    "area": {
+      "string": {}
+    },
+    "date": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2020-12-31T23:59:59Z"
+      }
+    },
+    "status": {
+      "belongsTo": "Status"
+    },
+    "isolationPlan": {
       "boolean": {}
+    },
+    "gasTest": {
+      "boolean": {}
+    },
+    "learnedLessons": {
+      "boolean": {}
+    },
+    "plot": {
+      "string": ["test.pdf"]
+    },
+    "isolationPlanData": {
+      "belongsTo": "IsolationPlanData"
+    },
+    "learnedLessonsData": {
+      "string": ["learnedLessonsData"]
     }
   }
 }
