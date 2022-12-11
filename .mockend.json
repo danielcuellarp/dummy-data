@@ -22,7 +22,7 @@
       "string": ["test.pdf"]
     }
   },
-  "IsolationPlan": {
+  "Isolation": {
     "title": {
       "string": {}
     }
