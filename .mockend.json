@@ -72,7 +72,7 @@
       "string": ["test.pdf"]
     },
     "isolationPlanData": {
-      "belongsTo": "IsolationPlanData"
+      "string": ["isolationPlanData"]
     },
     "learnedLessonsData": {
       "string": ["learnedLessonsData"]
