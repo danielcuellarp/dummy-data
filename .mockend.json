@@ -1,7 +1,7 @@
 {
   "Activity": {
     "title": {
-      "string": {}
+      "string": ["Titulo de la actividad"]
     },
     "done": {
       "boolean": {}
@@ -13,24 +13,33 @@
       "string": ["blue", "purple", "red"]
     },
     "title": {
-      "string": {}
+      "string": ["Permiso de trabajo", "Ejecucion plan de aislamiento", "Ejecucion prueba de gases", "En ejecucion", "Cerrado"]
     },
     "subtitle": {
-      "string": {}
+      "string": ["Aprobacion pendiente", ""]
     },
     "date": {
-      "string": ["test.pdf"]
+      "string": ["Noviembre 21 2022"]
+    }
+  },
+  "Statuss": {
+    "code": { "int": { "min": 1, "max": 3 } },
+    "title": {
+      "string": ["Pendiente", "Vigente", "Vencido"]
+    },
+    "subtitle": {
+      "string": ["por aprobación", ""]
     }
   },
   "Isolation": {
     "title": {
       "string": {}
     },
-    "from": {
-      "string": {}
+    "validFrom": {
+      "string": ["Noviembre 30 2022"]
     },
-    "to": {
-      "string": {}
+    "validUntil": {
+      "string": ["Noviembre 29 2023"]
     },
     "isDefeated": {
       "boolean": {}
@@ -38,23 +47,38 @@
     "status": {
       "string": ["blue", "purple", "red"]
     },
-    "statusCode": { "int": { "min": 1, "max": 3 } }
+    "statusCode": { "int": { "min": 1, "max": 3 } },
+    "emisor": {
+      "string": {}
+    },
+    "emisor_date": {
+      "string": {}
+    },
+    "emisor_time": {
+      "string": {}
+    },
+    "activities": {
+        "hasMany": "Activity"
+    }
   },
   "Permit": {
     "number": {
       "string": {}
     },
     "title": {
-      "string": {}
+      "string": ["Título permiso de trabajo"]
     },
     "hardware": {
-      "string": {}
+      "string": ["Nombre del equipo"]
     },
     "area": {
-      "string": {}
+      "string": ["Nombre area"]
+    },
+    "areaa": {
+      "string": ["A", "B", "C"]
     },
     "date": {
-      "string": ["test.pdf"]
+      "string": ["Noviembre 30 2022"]
     },
     "status": {
       "belongsTo": "Status"
@@ -72,7 +96,7 @@
       "string": ["test.pdf"]
     },
     "isolationPlanData": {
-      "string": ["isolationPlanData"]
+      "belongsTo": "Isolation"
     },
     "learnedLessonsData": {
       "string": ["learnedLessonsData"]
